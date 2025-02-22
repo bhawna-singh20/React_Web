@@ -14,29 +14,33 @@ import pic from "../../public/Hack.jpg";
 
 function Home() {
   return (
-    <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-20'>
-      <div className='flex flex-col md:flex-row'>
-      <div className='md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1'>
-        <span className='texr-xl'>Welcome In My Feed</span>
-        <div className='flex space-x-1 text-xl md:text-2xl'>
-        <h1>Hello, I'm a</h1>
-        {/* <span className='text-red-700 font-bold'>Developer</span> */}
+    <div className='dark:bg-gray-800 dark:text-white bg-gray-100 container mx-auto px-4 min-h-screen md:px-20'>
+      <div className='flex flex-col md:flex-row min-h-screen items-center justify-center'>
+      <div className='md:w-1/2 order-2 md:order-1'>
+        <span className='text-xl font-bold font-sans'>Welcome To My Feed</span>
+        <div className='flex text-xl md:text-2xl mt-5'>
+        <h1>Hello, I'm a 
+        <span className='dark:text-yellow-400 text-green-600 font-bold ml-2'>
         <ReactTyped
-          className='text-red-700 font-bold'
           strings={["Develover", "Programmer","Coder"]}
           typeSpeed={40}
           backSpeed={50}
           loop={true}
         />
+        </span>
+        </h1>
         </div><br />
         <p className='text-sm md:text-md text-justify'>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, recusandae consequatur. Accusamus sint libero eligendi laborum fuga repudiandae? Asperiores tempore eos animi dolores corrupti! Sint quos, mollitia architecto 
         aliquam nesciunt, optio cum delectus sit voluptatum aut ratione quaerat veniam aperiam!</p><br />
+
+        <p className='text-sm md:text-md text-justify'>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, recusandae consequatur. Accusamus sint libero eligendi laborum fuga repudiandae? Asperiores tempore eos animi dolores  sit voluptatum aut ratione quaerat veniam aperiam!</p>
         {/* social media icon */}
-        <div className='flex flex-col items-center md:flex-row justify-between space-y-6 md:space-y-0'>
-        <div className='space-y-2'>
+        <div className='mt-20 flex flex-col items-center md:flex-row justify-between'>
+        <div>
           <h1 className='font-bold'>Available on</h1>
-          <ul className='flex space-x-5'>
+          <ul className='flex gap-4 mt-3'>
           <li>
           <a href="https://github.com/bhawna-singh20" target='_blank'> 
           <FaGit className='text-2xl cursor-pointer'/></a> 
@@ -52,9 +56,9 @@ function Home() {
           
           </ul>
         </div>
-        <div className='space-y-2'>
+        <div>
           <h1 className='font-bold'>Currently working on</h1>
-          <ul className='flex space-x-5'>
+          <ul className='flex gap-4 mt-3'>
           <li><SiSpringboot className='text-2xl cursor-pointer hover:scale-110 duration-200 rounded-full border-[2px]'/></li>
           <li><DiJava className='text-2xl cursor-pointer hover:scale-110 duration-200 rounded-full border-[2px]'/></li>
           <li><FaReact className='text-2xl cursor-pointer hover:scale-110 duration-200 rounded-full border-[2px]'/></li>
@@ -64,7 +68,7 @@ function Home() {
         </div>
         </div>
       </div>
-      <div className='md:w-1/2 md:ml-48 md:mt-20 order-1 mt-8'>
+      <div className='md:w-1/2 order-1 flex justify-end'>
         <img src={pic} className="rounded-full md:w-[450px] md:h-[450px] w-[380px] h-[380px]" alt="" />
       </div>
       </div>
