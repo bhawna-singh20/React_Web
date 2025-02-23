@@ -14,8 +14,7 @@ import pic from "../../public/Hack.jpg";
 
 function Home() {
   return (
-    <div className='dark:bg-gray-800 dark:text-white bg-gray-100 container mx-auto px-4 min-h-screen md:px-20'>
-      <div className='flex flex-col md:flex-row min-h-screen items-center justify-center'>
+      <div id='home' className='md:px-20 lg:py-0 py-12 sm:py-16 px-4 dark:bg-gray-800 dark:text-white bg-gray-100 w-full min-h-[calc(100vh-4rem)] flex flex-col gap-10 md:flex-row items-center justify-center'>
       <div className='md:w-1/2 order-2 md:order-1'>
         <span className='text-xl font-bold font-sans'>Welcome To My Feed</span>
         <div className='flex text-xl md:text-2xl mt-5'>
@@ -37,7 +36,7 @@ function Home() {
         <p className='text-sm md:text-md text-justify'>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, recusandae consequatur. Accusamus sint libero eligendi laborum fuga repudiandae? Asperiores tempore eos animi dolores  sit voluptatum aut ratione quaerat veniam aperiam!</p>
         {/* social media icon */}
-        <div className='mt-20 flex flex-col items-center md:flex-row justify-between'>
+        <div className='mt-20 flex flex-col gap-10 items-center px-10 md:px-0 sm:flex-row justify-between'>
         <div>
           <h1 className='font-bold'>Available on</h1>
           <ul className='flex gap-4 mt-3'>
@@ -58,7 +57,7 @@ function Home() {
         </div>
         <div>
           <h1 className='font-bold'>Currently working on</h1>
-          <ul className='flex gap-4 mt-3'>
+          <ul className='flex justify-center gap-4 mt-3'>
           <li><SiSpringboot className='text-2xl cursor-pointer hover:scale-110 duration-200 rounded-full border-[2px]'/></li>
           <li><DiJava className='text-2xl cursor-pointer hover:scale-110 duration-200 rounded-full border-[2px]'/></li>
           <li><FaReact className='text-2xl cursor-pointer hover:scale-110 duration-200 rounded-full border-[2px]'/></li>
@@ -69,10 +68,9 @@ function Home() {
         </div>
       </div>
       <div className='md:w-1/2 order-1 flex justify-end'>
-        <img src={pic} className="rounded-full md:w-[450px] md:h-[450px] w-[380px] h-[380px]" alt="" />
+        <img src={pic} className="rounded-full w-52 h-52 md:w-64 md:h-64" alt='photo'/>
       </div>
       </div>
-    </div>
     
   );
 }
