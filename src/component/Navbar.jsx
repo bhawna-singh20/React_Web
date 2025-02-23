@@ -23,7 +23,7 @@ function Navbar() {
 
   return (
       <div
-        className={`dark:bg-black bg-white container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50`}
+        className={`dark:bg-black bg-white w-full px-4 md:px-8 lg:px-20 h-16 shadow-md sticky left-0 right-0 top-0 z-50`}
       >
         <div className='flex justify-between items-center h-16'>
 
@@ -43,24 +43,24 @@ function Navbar() {
                 </li>
               ))}
             </ul>
-            <div className='flex items-center space-x-2'>
-              <button onClick={toggleTheme} className="dark:bg-white bg-gray-700 p-2 rounded-full">
+            <div className='flex gap-3 items-center'>
+              <button onClick={toggleTheme} className="dark:bg-white bg-gray-700 p-[0.4rem] rounded-full">
                  {
-                  darkthemeon ? (<FaSun className='text-black' />) : (<FaMoon className='text-white' />)
+                  darkthemeon ? (<FaSun size={12} className='text-black' />) : (<FaMoon size={12} className='text-white' />)
                  }
               </button>
-              {/* <div onClick={() => setMenu(!menu)} className='md:hidden'>
-                {menu ? <RxCross2 size={24} /> : <MdOutlineMenu size={24} />}
-              </div> */}
+              <div onClick={() => setMenu(!menu)} className='md:hidden'>
+                {menu ? <RxCross2 size={24} className='dark:text-white text-black' /> : <MdOutlineMenu className='dark:text-white text-black' size={24} />}
+              </div>
             </div>
           </div>
           
         </div>
         {menu && (
-          <div className={`md:hidden flex flex-col items-center justify-center space-y-4`}>
-            <ul className="flex flex-col space-y-4">
+          <div className={`md:hidden p-5 absolute top-16 w-screen left-0 right-0 flex justify-center shadow-lg rounded bg-gray-300 dark:bg-gray-900`}>
+            <ul className="flex flex-col gap-5">
               {navItem.map(({ id, text, href }) => (
-                <li key={id} className={`hover:scale-105 duration-200 cursor-pointer ${theme === 'dark' ? 'text-gray-200' : 'text-gray-800'}`}>
+                <li key={id} className={`hover:scale-105 duration-200 cursor-pointer dark:text-gray-200 text-gray-800`}>
                   <a href={href}>{text}</a>
                 </li>
               ))}
