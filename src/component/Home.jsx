@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa6";
+import { BsTwitter } from 'react-icons/bs';
 import { FaGit } from 'react-icons/fa';
 import { SiSpringboot } from 'react-icons/si';
 import { DiJava } from 'react-icons/di';
@@ -30,11 +29,12 @@ function Home() {
         </h1>
         </div><br />
         <p className='text-sm md:text-md text-justify'>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, recusandae consequatur. Accusamus sint libero eligendi laborum fuga repudiandae? Asperiores tempore eos animi dolores corrupti! Sint quos, mollitia architecto 
-        aliquam nesciunt, optio cum delectus sit voluptatum aut ratione quaerat veniam aperiam!</p><br />
+        A highly motivated and results-driven Java Developer with 2 years of experience specializing in building and maintaining Java-based web applications using Spring Boot. Proficient in full-stack development, object-oriented programming, and RESTful services. Skilled 
+        in database integration, application performance optimization, and agile methodologies.</p><br />
 
         <p className='text-sm md:text-md text-justify'>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, recusandae consequatur. Accusamus sint libero eligendi laborum fuga repudiandae? Asperiores tempore eos animi dolores  sit voluptatum aut ratione quaerat veniam aperiam!</p>
+        As a software developer, I was responsible for both the development and maintenance of the microservice for the Royalty Submission portal. This portal allows vendors to submit royalties for merchandise they are authorized to sell. The application is built with Java and features a ReactJS frontend, hosted on AWS. My role focused on
+        backend development, where I contributed to adding new features and resolving defects.</p>
         {/* social media icon */}
         <div className='mt-20 flex flex-col gap-10 items-center px-10 md:px-0 sm:flex-row justify-between'>
         <div>
@@ -49,8 +49,8 @@ function Home() {
               <FaLinkedin className='text-2xl cursor-pointer'/></a>
           </li>
           <li>
-          <a href="https://t.me/" target='_blank'>
-            <FaTelegram className='text-2xl cursor-pointer'/></a>
+          <a href="https://x.com/BhawnaACsingh04" target='_blank'>
+            <BsTwitter className='text-2xl cursor-pointer'/></a>
           </li>
           
           </ul>

@@ -17,10 +17,10 @@ function About() {
           Skills & Expertise
         </h1>
         <span className='dark:text-white'>
-          Proficient in [Java, SiSpringboot, ReactJs] Experienced with [Software
-          Tools/Technologies] Strong grasp of [Design Principles/Concepts]
-          Excellent problem-solving skills Effective communicator and
-          collaborator
+        	Languages: Java, Spring, SpringBoot, ReactJs, MySql, jQuery, JavaScript.<br></br>
+        	Developer Tools: Eclipse, IntelliJ , Git and GitHub, Postman .<br></br>
+	        Technologies / Skills : Java 8, Spring Boot„ JUnit, Hibernate, JPA , Spring Microservices, SQL, Github, OOPS, AWS ,ReactJs, JavaScript, HTML,CSS.
+
         </span>
         <br />
         <br />
@@ -37,7 +37,17 @@ function About() {
           Achievements & Awards
         </h1>
         <span className='dark:text-white'>
-          [TCS Gems], [Tata Consultancy Services], [2023] [Appreciation Note],[2024]
+          [TCS Gems], [Tata Consultancy Services], [2023] <br></br>
+          [Appreciation Note],[2024]
+        </span>
+        <br />
+        <br />
+        <h1 className="text-green-600 font-semibold text-xl">
+          Certificates
+        </h1>
+        <span className='dark:text-white'>
+          AWS Cloud Practitioner, [2023] <br></br>
+          Microsoft Azure AI Fundamental, [2024]
         </span>
         <br />
         <br />
