@@ -9,8 +9,6 @@ import { FaReact } from "react-icons/fa";
 
 import { ReactTyped,Typed } from "react-typed";
 
-import pic from "../../public/Hack.jpg";
-
 function Home() {
   return (
       <div id='home' className='md:px-20 lg:py-0 py-12 sm:py-16 px-4 dark:bg-gray-800 dark:text-white bg-gray-100 w-full min-h-[calc(100vh-4rem)] flex flex-col gap-10 md:flex-row items-center justify-center'>
@@ -68,7 +66,7 @@ function Home() {
         </div>
       </div>
       <div className='md:w-1/2 order-1 flex justify-end'>
-        <img src={pic} className="rounded-full w-52 h-52 md:w-64 md:h-64" alt='photo'/>
+        <img src="/Hack.jpg" className="rounded-full w-52 h-52 md:w-64 md:h-64" alt='photo'/>
       </div>
       </div>
     

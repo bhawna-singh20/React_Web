@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import pic from "../../public/Hacker_logo.avif"; // Adjust path if needed
 import { MdOutlineMenu } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 import { FaMoon, FaSun } from 'react-icons/fa';
@@ -28,7 +27,7 @@ function Navbar() {
         <div className='flex justify-between items-center h-16'>
 
           <div className='flex items-center space-x-2'>
-            <img src={pic} className='h-12 w-12 rounded-full' alt="Logo" />
+            <img src="/Hacker_logo.avif" className='h-12 w-12 rounded-full' alt="Logo" />
             <div className="flex flex-col">
               <h1 className='dark:text-white font-bold text-xl cursor-pointer'>Bhawna <span className='text-green-500'>Singh</span></h1>
               <p className='dark:text-yellow-400 text-sm'>Developer</p>
